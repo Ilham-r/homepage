@@ -1,38 +1,231 @@
 .App {
-  text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+transition:background-color ease-in-out 0.6s;
+}
+.night{
+background-color: #111729;
+}
+.night .navbar__switch{
+  background-color: #223344;
+}
+.night .content__wrapper-heading,
+.night h1 {
+  color: #F2F9FE;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar__switch{
+  display: flex;
+  background-color: #111729;
+  padding:  4px 8px;
+  border-radius: 30px;
+  gap:4px;
+}
+.navbar__switch img{
+  width: 22px;
+  height: 22px;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.active{
+  background-color: #F2F9FE;
+  border-radius: 50%;
+}
+
+.navbar__links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+a, a:hover,  a:visited{
+  text-decoration: none;
+  color: #909193;
+}
+a:hover{
+  color: #111729;
+  transition: ease-in 0.4s;
+}
+.night a:hover {
+  color: #F2F9FE;
+  transition: ease-in 0.4s;
+}
+
+
+.hero__wrapper{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 85%;
 }
 
-.App-link {
-  color: #61dafb;
+.content__wrapper{
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.content__wrapper-heading{
+  font-size: 0.865rem;
+  color: #223344;
+  font-weight: 600;
+  transition:color ease-in-out 0.6s;
+  
+}
+
+.content__wrapper-desc{
+  font-size: 1.115rem;
+  color: #909193;
+}
+h1{
+  font-size: 3.35rem;
+  font-weight: 600;
+  margin: 0;
+  color: #111729;
+  transition:color ease-in-out 0.6s;
+  line-height: 70px;
+}
+
+.buttons__wrap{
+  display: flex;
+  gap :40px;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  
+  background-color: #2A4DD0;
+  cursor: pointer;
+  padding: 12px 32px ;
+  border-radius: 12px;
+  color: #F2F9FE;
+  font-size: 1rem;
+}
+.buttons__wrap p {
+  font-size: 1.125rem;
+  color: #2A4DD0;
+  text-decoration: underline;
+  font-weight: 600;
+
+}
+.details{
+  display: flex;
+  font-size:  0.875rem;
+  color: #909193;
+  justify-content: center;
+  align-items: center;
+}
+.details  p{
+  margin-right: 20px;
+  
+}
+.details img{
+  margin-right: 10px;
+}
+.image__wrapper{
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+width: 50%;
+}
+.image__wrapper img{
+  display: block;
+  width: 100%;
+}
+img.menu,.toggle__navbar{
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+  .App{
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .hero__wrapper{flex-direction: column-reverse;
+  gap: 50px;}
+  .content__wrapper{
+    width:100%;
   }
+ .content__wrapper-fast{
+  width: 500px;
+ }
+
+}
+
+@media screen and (max-width:640px) {
+  
+  .hero__wrapper{flex-direction: column-reverse;
+    gap: 50px;}
+    .content__wrapper{
+      width:100%;
+    }
+  .image__wrapper{
+    width: 100%;
+  }
+  .navbar__switch,.navbar__links{
+    display: none;
+  }
+  img.menu{
+    display: block;
+    width: 25px;
+    height: 25px ;
+    cursor: pointer;
+   }
+   
+.close{
+  font-size: 1.75rem;
+  font-weight:100 ;
+align-self: flex-end;
+margin-top: -60px;
+margin-right: 50px;
+cursor: pointer;
+}
+   .toggle__navbar{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+    bottom: 0;
+    right: 0;
+    gap: 30px;
+    background-color: #FFF;
+    
+   }
+   .toggle__navbar-night{
+    background-color: #111729;
+   }
+   .toggle__navbar-night .close{
+    color: #F2F9FE;
+   }
+   .toggle__navbar >.navbar__links{
+ 
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+   }
+   .toggle__navbar>.navbar__switch{
+    display: flex;
+   }
+
 }
