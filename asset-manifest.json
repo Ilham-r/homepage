@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/hompage/static/css/main.06353ad2.css",
-    "main.js": "/hompage/static/js/main.c53f60da.js",
-    "static/js/787.75922526.chunk.js": "/hompage/static/js/787.75922526.chunk.js",
-    "static/media/hero.png": "/hompage/static/media/hero.ff9ad3e5552ed97ee677.png",
-    "static/media/alarado-icon-homepage.svg": "/hompage/static/media/alarado-icon-homepage.58fddcf539211b9c34969ae72777a252.svg",
-    "static/media/Sun_fill.svg": "/hompage/static/media/Sun_fill.4481d557271e7237163a134cd71e3b81.svg",
-    "index.html": "/hompage/index.html",
-    "static/media/Moon_fill.svg": "/hompage/static/media/Moon_fill.0d92e573b71c25b9ed35a2ac571b9d2d.svg",
-    "static/media/Moon_fill_light.svg": "/hompage/static/media/Moon_fill_light.39c91f52523e521c9a1ce53883c17e24.svg",
-    "static/media/Done_ring_round_fill.svg": "/hompage/static/media/Done_ring_round_fill.542e6adf8bf0e4da2a76e1e94281dff8.svg",
-    "main.06353ad2.css.map": "/hompage/static/css/main.06353ad2.css.map",
-    "main.c53f60da.js.map": "/hompage/static/js/main.c53f60da.js.map",
-    "787.75922526.chunk.js.map": "/hompage/static/js/787.75922526.chunk.js.map"
+    "main.css": "/homepage/static/css/main.06353ad2.css",
+    "main.js": "/homepage/static/js/main.71c95572.js",
+    "static/js/787.75922526.chunk.js": "/homepage/static/js/787.75922526.chunk.js",
+    "static/media/hero.png": "/homepage/static/media/hero.ff9ad3e5552ed97ee677.png",
+    "static/media/alarado-icon-homepage.svg": "/homepage/static/media/alarado-icon-homepage.58fddcf539211b9c34969ae72777a252.svg",
+    "static/media/Sun_fill.svg": "/homepage/static/media/Sun_fill.4481d557271e7237163a134cd71e3b81.svg",
+    "index.html": "/homepage/index.html",
+    "static/media/Moon_fill.svg": "/homepage/static/media/Moon_fill.0d92e573b71c25b9ed35a2ac571b9d2d.svg",
+    "static/media/Moon_fill_light.svg": "/homepage/static/media/Moon_fill_light.39c91f52523e521c9a1ce53883c17e24.svg",
+    "static/media/Done_ring_round_fill.svg": "/homepage/static/media/Done_ring_round_fill.542e6adf8bf0e4da2a76e1e94281dff8.svg",
+    "main.06353ad2.css.map": "/homepage/static/css/main.06353ad2.css.map",
+    "main.71c95572.js.map": "/homepage/static/js/main.71c95572.js.map",
+    "787.75922526.chunk.js.map": "/homepage/static/js/787.75922526.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06353ad2.css",
-    "static/js/main.c53f60da.js"
+    "static/js/main.71c95572.js"
   ]
 }
